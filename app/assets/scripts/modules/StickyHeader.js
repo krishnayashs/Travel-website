@@ -20,7 +20,7 @@ class StickyHeader {
   createHeaderWaypoint() {
     var that = this;
     new Waypoint({
-      element: this.headerTriggerElement[0],
+      element: that.headerTriggerElement[0],
       handler: function(direction) {
         if (direction == "down") {
           that.siteHeader.addClass("site-header--dark");
